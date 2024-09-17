@@ -1,0 +1,179 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f1ea; /* Light beige for background */
+}
+
+/* Header styling */
+header {
+    background-color: #6f4f28; /* Coffee brown */
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #3d2b1f; /* Darker brown for border */
+}
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+header nav ul li a:hover {
+    color: #e0c4a8; /* Light beige on hover */
+}
+
+/* Main section styling */
+main {
+    padding: 40px 20px;
+}
+main .section {
+    margin-bottom: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    color: #5c4033; /* Medium brown */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+/* Posts container */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.post {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.post h3 {
+    margin: 15px 0;
+    color: #5c4033; /* Medium brown */
+}
+.post p {
+    line-height: 1.8;
+}
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer styling */
+footer {
+    background-color: #6f4f28; /* Coffee brown */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #3d2b1f; /* Darker brown for border */
+}
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Map container */
+#mapid {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #6f4f28; /* Coffee brown border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Popup styling */
+.leaflet-popup-content-wrapper {
+    background-color: #8d6e63; /* Brownish */
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.leaflet-popup-content {
+    font-size: 14px;
+}
+.leaflet-popup-tip {
+    background: #8d6e63; /* Brownish */
+}
+
+/* Button styling */
+button {
+    background-color: #8c5e3c; /* Brownish tan */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+button:hover {
+    background-color: #6f4f28; /* Coffee brown */
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+/* Form styling */
+input, textarea {
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+input:focus, textarea:focus {
+    border-color: #8c5e3c; /* Brownish tan */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
